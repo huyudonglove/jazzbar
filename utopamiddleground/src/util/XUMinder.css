@@ -1,0 +1,121 @@
+.xu_minder{
+  /* border:1px solid #aaa; */
+  position:relative;
+}
+.xu_add_icon:before {
+  content: "\e723";
+}
+.xu_add_icon{
+  font-family: element-icons!important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.xu_reduce_icon:before {
+  content: "\e722";
+}
+.xu_reduce_icon{
+  font-family: element-icons!important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.xu-bar{
+  position: absolute;
+  width: 35px;
+  height: 120px;
+  padding: 5px 0;
+  right: 10px;
+  bottom: 10px;
+  background: #6752f4;
+  color: #fff;
+  border-radius: 4px;
+  z-index: 5;
+  text-align: center;
+}
+.xu-bar .zoom-pan {
+  width: 2px;
+  height: 70px;
+  box-shadow: 0 1px #E50000;
+  position: relative;
+  background: white;
+  margin: 3px auto;
+  overflow: visible;
+}
+.xu-bar .zoom-pan .origin{
+  position: absolute;
+  width: 20px;
+  height: 8px;
+  left: -9px;
+  margin-top: -4px;
+  background: transparent;
+}
+.xu-bar .zoom-pan .origin:after {
+  content: ' ';
+  display: block;
+  width: 6px;
+  height: 2px;
+  background: white;
+  left: 7px;
+  top: 3px;
+  position: absolute;
+}
+.xu-bar .zoom-pan .indicator {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: -3px;
+  background: white;
+  border-radius: 100%;
+  margin-top: -4px;
+}
+li, ol, ul {
+  list-style: none;
+}
+.topic-menu {
+  position: fixed;
+  cursor: default;
+  font-size: 12px;
+  z-index: 4;
+}
+
+.topic-menu .tm-list {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  border-radius: 3px;
+}
+.topic-menu .tm-list .tml-item {
+  height: 23px;
+  line-height: 23px;
+  position: relative;
+  padding: 0 4px;
+}
+.topic-menu .tm-list .tml-item:hover {
+  background: #e0e0e0;
+}
+.topic-menu .tm-list .tml-item svg {
+  width: 16px;
+  height: 16px;
+  margin: 3px 4px 0 0;
+  display: block;
+  position: absolute;
+  left: 5px;
+}
